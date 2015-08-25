@@ -1,0 +1,68 @@
+
+.wrapper {
+    height:100vh;
+    display:flex;
+// Direction of the items, can be row or column
+flex-direction: column;
+}
+.navbar-brand {
+    height: 30%;
+}
+.navmenulist{
+    height: 70%;
+}
+#main{
+    background-color: darkorange;
+    position:fixed;
+    top:30%;
+}
+#nav{
+    float:left;
+}
+#nav li{
+    display: inline;
+}
+#nav ul{
+    margin: 0; padding: 0;
+    list-style-type: none; list-style-image: none;
+}
+#nav ul li a {
+    text-decoration: none;
+    margin: -2px;
+    padding: 1px 32px 10px 20px;
+    color: darkblue;
+    background: cornsilk;
+}
+#nav ul li a:hover {color: purple;
+    background: yellow; }
+
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#container {
+    min-height:100%;
+    position:relative;
+}
+#header {
+    background:whitesmoke;
+    padding:10px;
+}
+#body {
+    padding:10px;
+    padding-bottom:60px;   /* Height of the footer */
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   /* Height of the footer */
+    background-color: whitesmoke;
+    align-content: center;
+    color: darkblue;
+}
+#footer p{
+    text-align: center;
+}

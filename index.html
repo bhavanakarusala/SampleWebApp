@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>This is my Main Page</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<!--using header tags for having nav bar in the page -->
+
+
+
+<body  ng-app="devApp">
+<div id="container">
+    <div id="header">
+            <h1>Site Title</h1>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+</div>
+
+
+
+<div id="body">
+   <div id="main" ng-controller="maincontroller">
+ {{message}}
+            <!-- place to load the templates based on the user clicks -->
+            <div ng-view>
+
+            </div>
+    
+   </div>
+</div>
+
+
+<div id="footer">
+    <p>copyright@bhavanakarusala</p>
+</div>
+<!--All the views gets injects into this main div -->
+</div>
+
+</body>
+</html>
